@@ -16,7 +16,7 @@ namespace AspectAbilities.Buffs
             AspectAbilitiesPlugin.config,
             "Perfected",
             "Max HP Loss Per Hit",
-            10f,
+            1f,
             0f,
             100f,
             "How much HP can you lose in one hit when the buff is active (in %)",
