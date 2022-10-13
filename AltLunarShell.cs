@@ -67,6 +67,7 @@ namespace AspectAbilities.Buffs
             if (victimInfo.body && victimInfo.body.HasBuff(AspectAbilitiesContent.Buffs.AspectAbilities_AltLunarShell) && victimInfo.healthComponent)
             {
                 damage = Mathf.Min(damage, victimInfo.healthComponent.fullCombinedHealth * maxDamageTaken / 100f);
+                if ((damage / victimInfo.healthComponent.fullCombinedHealth) < 0.01f) damage = 0;
             }
         }
     }
